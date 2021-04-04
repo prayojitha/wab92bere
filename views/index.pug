@@ -6,13 +6,3 @@ block content
 
   p Welcome to #{title}
   p buttons.
-  button(class="btn btn-success" type="submit" onclick = "update()") Press Me
-  
-  div(id="target" ) Display
-  
-  script. 
-    var clientcount = 0;
-    function update(){
-      clientcount = clientcount + 1;
-      document.getElementById("target").innerHTML = "Value now " + clientcount+".";
-    }
