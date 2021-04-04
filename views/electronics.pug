@@ -11,9 +11,5 @@ block content
   div(class="row")
      var i = 0
     each value in result
-     div(class="col-sm-2" onclick = `buy(${i})` style="background-color:lavender") category: #{value.category} - item: #{value.category} - price: #{value.price} 
-      -i=i + 1 
-      script.
-      function buy(a){
-        alert(`purchased item ${a+1}`)
-      } 
+     div(class="col-sm-2" style="background-color:lavender") #{value}  
+       
